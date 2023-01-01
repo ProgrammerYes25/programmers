@@ -23,11 +23,12 @@ public class Lv0_2023_01_01_No_1 {
         int min, max=1;
         answer[0] = denum1*num2+denum2*num1;
         answer[1] = num1*num2;
-        min = answer[0];
-        if(min < answer[1]){
-            min = answer[0];
-        }
-        for(int i =1; i<=min; i++) {
+        min = Math.min(answer[0], answer[1]);
+//        min = answer[0];
+//        if(min < answer[1]){
+//            min = answer[0];
+//        }
+        for(int i = 1; i<=min; i++) {
             if (answer[0] % i == 0 && answer[1] % i == 0) {
                 max = i;
             }
