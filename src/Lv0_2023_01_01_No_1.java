@@ -23,7 +23,7 @@ public class Lv0_2023_01_01_No_1 {
         int min, max=1;
         answer[0] = denum1*num2+denum2*num1;
         answer[1] = num1*num2;
-        min = Math.min(answer[0], answer[1]);
+        min = Math.min(answer[0], answer[1]);//Math.min 메소드 이용
 //        min = answer[0];
 //        if(min < answer[1]){
 //            min = answer[0];
